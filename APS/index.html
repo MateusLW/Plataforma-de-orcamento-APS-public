@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyWebsite</title>
+    <script src="index.js" defer></script>
+</head>
+<style type="text/css">
+    .questions{
+        display:flex; justify-content: center;
+    }
+    #title{
+        display:flex; justify-content: center;
+        margin-top: 220px;
+    }
+</style>
+<body>
+    <h1 id="title">Login</h1>
+    <form class="questions">
+        <div class="infos">
+            <input required id="username" placeholder="Username"><br><br>
+            <input required id="password" placeholder="Password" type="password"><br><br>
+            <button id="submit" onclick="logar(); return false" >Submit</button>
+        </div>
+    </form>
+</body>
+</html>

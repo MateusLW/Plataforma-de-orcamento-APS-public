@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerar Contrato</title>
+    <style type="text/css">
+        *{
+            text-decoration: none;
+        }
+        .navbar{
+            font-family: calibri; padding-right: 100px; padding-left: 15px;
+        }
+        .navdiv{
+            display: flex; align-items: center; justify-content: space-between;
+        }
+        li{
+            list-style: none; display: inline-block; font-size: 20px; font-weight: bold; margin-right: 35px;
+        }
+        a{
+            color: black;
+        }
+        .logo{
+            font-size: 35px; font-weight: 600;
+        }
+        .questions{
+            display:flex; justify-content: center; margin-bottom: 150px;
+        }
+        .infos{
+            width: 200px;
+            height: 200px;
+        }
+        .local{
+            width: 200px;
+            height: 200px;
+        }
+        .final{
+            width: 200px;
+            height: 200px;
+        }
+        #title{
+            display: flex; justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <nav class = "navbar">
+        <div class = "navdiv">
+            <a class = "logo">Fontenele Publicações</a>
+            <ul>
+                <li><a href="orçamento.html">Orçamento</a></li>
+                <li><a href="contrato.html">Contrato</a></li>
+            </ul>
+        </div>
+    </nav><hr><br>
+    <h1 id="title">PDF de contrato</h1>
+    <form class="questions">
+        <div class="infos">
+        <p>Nome do Cliente*</p>
+            <input id="nome" placeholder="Nome" required>
+            <p>CPF do Cliente*</p>
+            <input id="cpf" placeholder="CPF" required>
+            <p>E-mail do Cliente*</p>
+            <input id="email" placeholder="E-mail" required>
+            <p>Telefone do Cliente*</p>
+            <input id="Telefone" placeholder="Telefone" required>
+        </div>
+        <div class="local">
+            <p>CEP do Cliente*</p>
+            <input id="cep" placeholder="CEP" required>
+            <p>Estado*</p>
+            <input id="estado" placeholder="Estado" required>
+            <p>Cidade*</p>
+            <input id="cidade" placeholder="Cidade" required>
+            <p>Rua*</p>
+            <input id="rua" placeholder="Rua" required>
+            <p>Número da residência*</p>
+            <input id="numero" placeholder="Numéro" required>
+        </div>
+        <div class="final">
+            <p>Valor do Contrato*</p>
+            <input id="valor" placeholder="Valor" required><br><br>
+            <button>Submit</button>
+        </div>
+    </form><br><br>
+    <h1 id="title">Fechamento de Contrato</h1>
+    <form class="questions">
+        <div>
+            <p>Email*</p>
+            <input id = "email" placeholder="Email" required>
+            <button>Submit</button>
+        </div>
+    </form>
+</body>
+</html>

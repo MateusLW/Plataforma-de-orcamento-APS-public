@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyWebsite</title>
+    <style type="text/css">
+        *{
+            text-decoration: none;
+        }
+        .navbar{
+            font-family: calibri; padding-right: 100px; padding-left: 15px;
+        }
+        .navdiv{
+            display: flex; align-items: center; justify-content: space-between;
+        }
+        li{
+            list-style: none; display: inline-block; font-size: 20px; font-weight: bold; margin-right: 35px; color: black;
+        }
+        a{
+            color: black;
+        }
+        .logo{
+            font-size: 35px; font-weight: 600; color: black;
+        }
+        .questions{
+            display:flex; justify-content: center; align-items: first baseline;
+        }
+        #title{
+            display:flex; justify-content: center;
+        }
+        .infos{
+            width: 200px;
+            height: 200px;
+        }
+        .livro{
+            width: 200px;
+            height: 200px;
+        }
+    </style>
+    <script src = "orçamento.js" defer></script>
+</head>
+<body>
+    <nav class = "navbar">
+        <div class = "navdiv">
+            <a class = "logo">Fontenele Publicações</a>
+            <ul>
+                <li><a href="orçamento.html">Orçamento</a></li>
+                <li><a href="contrato.html">Contrato</a></li>
+            </ul>
+        </div>
+    </nav><hr><br>
+    <h1 id="title">PDF de orçamento</h1>
+    <form class="questions">
+        <div class="infos">
+            <p>Nome do Cliente*</p>
+            <input id = "nome" placeholder = "Nome" required>
+            <p>Email do Cliente*</p>
+            <input id = "email" placeholder="Email" required>
+        </div>
+        <div class="livro">
+            <p>Impressão do Miolo*</p>
+            <select id = "impressão" required>
+                <option value>Selecione</option>
+                <option value = "PB">Preto e Branco</option>
+                <option value = "colorido">Colorido</option>
+            </select> 
+            <p>Páginas*</p>
+            <input placeholder="16-1016" required>
+            <p>Proporção*</p>
+            <select id = "proporção" required>
+                <option value>Selecione</option>
+                <option value="10x15">10x15</option>
+                <option value="12x19">12x19</option>
+                <option value="14x21">14x21</option>
+                <option value="16x23">16x23</option>
+                <option value="17x24">17x24</option>
+                <option value="18x26">18x26</option>
+                <option value="21x28">21x28</option>
+            </select>
+        </div>
+        <button onclick = "gerarPDF();">Submit</button>
+    </form>
+</body>
+</html>
